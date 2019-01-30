@@ -124,52 +124,66 @@ footer p{
 .owl-carousel {
 }
 .top-carousel,.new-carousel{
-        margin-top: 100px;
-        margin-bottom:50px;
-        margin-left: 120px;;
-        margin-right: 50px; 
-      }
-      .top-carousel .owl-carousel,.new-carousel .owl-carousel{
-        padding:5px; 
-      }
+  margin-top: 90px;
+  margin-bottom:50px;
+  margin-left: 120px;;
+  margin-right: 50px; 
+}
+.top-carousel .owl-carousel,.new-carousel .owl-carousel{
+  padding:5px; 
+}
 
-      .top-carousel .owl-carousel .btn,.new-carousel .owl-carousel .btn{
-          background-color:#f7882f;
-          color: #f7c331;
-          border: none;
-      }
-      .top-carousel .owl-carousel .btn:hover,.new-carousel .owl-carousel .btn:hover{
-          background-color:#f7c331;
-          color:#f7882f;
-      }
-      .top-carousel .badge,.new-carousel .badge,.container .badge{
-        background-color: #f7c331;
-        font-size: 20px;
-        color: #fff;
-        margin: 20px auto;
-      }
+.top-carousel .owl-carousel .btn,.new-carousel .owl-carousel .btn{
+    background-color:#f7882f;
+    color: #f7c331;
+    border: none;
+}
+.top-carousel .owl-carousel .btn:hover,.new-carousel .owl-carousel .btn:hover{
+    background-color:#f7c331;
+    color:#f7882f;
+}
+.top-carousel .badge,.new-carousel .badge,.container .badge{
+  background-color: #f7c331;
+  font-size: 20px;
+  color: #fff;
+  margin: 20px auto;
+}
 
-      hr{
-        color:  #f7c331;
-      }
-      responsive : {
-    // breakpoint from 0 up
-    0 : {
-        option1 : value,
-        option2 : value,
-        ...
-    },
-    // breakpoint from 480 up
-    480 : {
-        option1 : value,
-        option2 : value,
-        ...
-    },
-    // breakpoint from 768 up
-    768 : {
-        option1 : value,
-        option2 : value,
-        ...
-    }
+hr{
+  color:  #f7c331;
+}
+
+.owl-theme .owl-nav{
+  position: absolute;
+  top: 155px;
+  left: -35px;
+  font-size: 70px;
+}
+ 
+
+ 
+.owl-next{
+  position: absolute;
+  right: -1220px;
+}
+responsive : {
+  // breakpoint from 0 up
+  0 : {
+    option1 : value,
+    option2 : value,
+    ...
+  },
+  // breakpoint from 480 up
+  480 : {
+    option1 : value,
+    option2 : value,
+    ...
+  },
+  // breakpoint from 768 up
+  768 : {
+    option1 : value,
+    option2 : value,
+    ...
+  }
 }
 
