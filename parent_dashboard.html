@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Teacher Dashboard</title>
+	<title>Parent Dashboard</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -120,18 +120,18 @@
 	<section class="navs_pages">
 		<ul class="nav nav-tabs">
 			<li class="nav-item">
-				<a class="nav-link active" data-toggle="tab" href="#home">My Courses</a>
+				<a class="nav-link active" data-toggle="tab" href="#home">My Children</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#menu1">My Classrooms</a>
+				<a class="nav-link" data-toggle="tab" href="#menu1">Courses</a>
 			</li>
 		</ul>
 		<div class="tab-content">
 			<div class="tab-pane container active" id="home">
 				<div class="container">
 					<button id="add_course" type="button" class="btn" data-toggle="modal" data-target="#myModal">
-						<i class="fas fa-plus"></i>
-						Creat New Course
+						<img src="img/adduser.png" id="add_child_photo">
+						Add New Children
 					</button>
 					<div class="modal fade" id="myModal">
 						<div class="modal-dialog">
@@ -144,12 +144,36 @@
 								<!-- Modal body -->
 								<div class="modal-body">
 									<form method="post">
-										<label for="New_course_name">Course Name</label>
-										<input id="New_course_name" type="text" name="Corce_name" value="" placeholder="Course Name" required>
+										<label for="New_Child_first_name">First Name</label>
+										<input id="New_Child_first_name" type="text" name="child_name" value="" placeholder="First Name" required>
 										<br>
-										<p>                         ---------------------------------------------------</p>
-										<label for="New_course_description">Course Description</label>
-										<textarea id="New_course_description" name="name" rows="8" cols="40" placeholder="Course Description"></textarea>
+										<p>                           ------------------------------------------------------</p>
+										<label for="New_course_name">User Name</label>
+										<input id="New_Child_name" type="text" name="chile_name" value="" placeholder="User Name" required>
+										<br>
+										<p>                           ------------------------------------------------------</p>
+										<label for="Child_email">Email</label>
+										<input id="Child_email" type="email" name="chile_email" value="" placeholder="email" required>
+										<br>
+										<p>                           ------------------------------------------------------</p>
+										<label for="user_password">Password</label>
+										<input id="user_password" type="password" name="password" value="" placeholder="Password" required>
+										<br>
+										<p>                           ------------------------------------------------------</p>
+										<label for="grade">Grade</label>
+										<input id="grade" type="number" name="grade" value=""  required>
+										<br>
+										<p>                           ------------------------------------------------------</p>
+										<label for="date_of_birth">Date of birth</label>
+										<input id="date_of_birth" type="date" name="date_of_birth" value="" required>
+										<br>
+										<p>                           ------------------------------------------------------</p>
+										<label for="gender">Gender</label>
+										<select  name="gender" >
+											<option value="female">Female</option>
+											<option value="male">Male</option>
+										</select>
+
 										<div class="modal-footer">
 											<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 											<input type="submit" value="Creat Course" class="btn btn-dark"></input>
@@ -163,10 +187,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="img-circle" src="img/user.png"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
+										<a href="#"><h4 class="card-title">Child Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 									</div>
 								</div>
@@ -175,10 +199,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="img-circle" src="img/user.png"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
+										<a href="#"><h4 class="card-title">Child Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
 									</div>
 								</div>
@@ -187,10 +211,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="img-circle" src="img/user.png"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
+										<a href="#"><h4 class="card-title">Child Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
 									</div>
 								</div>
@@ -199,10 +223,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="img-circle" src="img/user.png"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
+										<a href="#"><h4 class="card-title">Child Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 									</div>
 								</div>
@@ -211,10 +235,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="img-circle" src="img/user.png"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
+										<a href="#"><h4 class="card-title">Child Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 									</div>
 								</div>
@@ -223,10 +247,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="img-circle" src="img/user.png"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
+										<a href="#"><h4 class="card-title">Child Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 									</div>
 								</div>
@@ -235,10 +259,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="img-circle" src="img/user.png"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
+										<a href="#"><h4 class="card-title">Child Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
 									</div>
 								</div>
@@ -250,10 +274,6 @@
 			<div class="tab-pane container fade" id="menu1">
 				<div class="container">
 					<!-- <span class="badge">Suggested Courses</span> -->
-					<button id="add_class_room" type="button" class="btn">
-						<i class="fas fa-plus"></i>
-						Creat Classroom
-					</button>
 					<div class="row">
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
@@ -263,6 +283,7 @@
 									<div class="card-body">
 										<a href="#"><h4 class="card-title">Course Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Enroll Child</a>
 									</div>
 								</div>
 							</div>
@@ -275,6 +296,7 @@
 									<div class="card-body">
 										<a href="#"><h4 class="card-title">Course Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
+										<a href="#" class="btn btn-primary">Enroll Child</a>
 									</div>
 								</div>
 							</div>
@@ -287,6 +309,7 @@
 									<div class="card-body">
 										<a href="#"><h4 class="card-title">Course Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
+										<a href="#" class="btn btn-primary">Enroll Child</a>
 									</div>
 								</div>
 							</div>
@@ -299,6 +322,7 @@
 									<div class="card-body">
 										<a href="#"><h4 class="card-title">Course Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Enroll Child</a>
 									</div>
 								</div>
 							</div>
@@ -311,6 +335,7 @@
 									<div class="card-body">
 										<a href="#"><h4 class="card-title">Course Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Enroll Child</a>
 									</div>
 								</div>
 							</div>
@@ -323,6 +348,7 @@
 									<div class="card-body">
 										<a href="#"><h4 class="card-title">Course Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Enroll Child</a>
 									</div>
 								</div>
 							</div>
@@ -335,6 +361,7 @@
 									<div class="card-body">
 										<a href="#"><h4 class="card-title">Course Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
+										<a href="#" class="btn btn-primary">Enroll Child</a>
 									</div>
 								</div>
 							</div>
