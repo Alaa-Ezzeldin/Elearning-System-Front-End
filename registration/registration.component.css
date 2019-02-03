@@ -1,0 +1,220 @@
+.container{
+    /*padding-bottom: 7%;*/
+    /* margin-bottom: 50px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top:50px; */
+    /* background: #212c39; */
+    background: #dcc7aa;
+    /* border-radius: 20px; */
+    width: 700px; 
+    position:relative;
+    height: 100%s;
+    padding-top: 60px;
+    padding-left: 5%;;
+    padding-right: 5%; 
+    padding-bottom: 60px; 
+    color: #4f4351;
+    box-shadow:0 0 50px rgba(79, 67, 81, 0.3);
+}
+#btnLogin{
+    /* background: rgba(255, 255, 255, 0.5); */
+    /* border-color:  #4f4351; */
+    /* box-shadow:0 0 10px  #4f4351; */
+    color:#dcc7aa;
+    width: 100%;
+    float: center;
+    font-size: 25px;
+    /* background-color: #4f4351; */
+    background: #5a6576;
+    /* border-color:  #4f4351; */
+    box-shadow:0 0 5px  #4f4351;
+    color:#dcc7aa;
+
+    /* position: absolute; */
+}
+#btnLogin:active{
+    background:rgba(0,0,0,0.5);
+    color: #6B7A8F;
+}
+
+
+hr{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4f4351;
+    margin-bottom: 30px;
+    width:30%;
+    height:5px; 
+    border-radius: 10px;
+}
+
+input{
+    background-color:#F7F7F7;
+    opacity: 0.9;
+}
+/* select{
+    background-color: red;
+} */
+
+.form-group{
+    margin-bottom: 40px;
+}
+
+.firstAndLastName{
+    display: inline-flex;
+}
+.FirstName input{
+    position: absolute;
+    left: 3%;
+    width: 45%;
+}
+.FirstName .invalid-feedback{
+    position: absolute;
+    top: 8%;
+}
+
+.LastName {
+    position: absolute;
+    right: 3%;
+    width: 45%;
+    margin-bottom: 40px;
+
+}
+.invalid-feedback{
+    color: red;
+}
+
+.dropdown-toggle {
+    color: black;
+    background-color: lightgray;
+}
+/* .dropdown-toggle::placeholder{
+    color: red;
+    background-color: red;
+} */
+
+
+
+
+
+
+    /*  How to Customize Checkbox and Radio Inputs with Custom CSS
+    Source: https://www.wufoo.com/2011/06/13/custom-radio-buttons-and-checkboxes/
+    Hide the original radios and checkboxes
+    (but still accessible)
+
+    :not(#foo) > is a rule filter to block browsers
+                 that don't support that selector from
+                 applying rules they shouldn't
+
+*/
+  div:not(#foo) > input[type='radio'] {
+    /* Hide the input, but have it still be clickable */
+    opacity: 0;
+    float: left;
+    width: 1px;
+  }
+  div:not(#foo) > input[type='radio'] + label{
+    margin: 0 0.2em;
+    clear: none;
+    /* Left padding makes room for image */
+    padding: 0.5em;
+    /* Make look clickable because they are */
+    cursor: pointer;
+    /*background: url(off.png) left center no-repeat;*/
+    background: #f2f2f0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #dadad5;
+    color: #7a7a69;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  /*
+      Change from unchecked to checked graphic
+  */
+  div:not(#foo) > input[type='radio']:checked + label{
+    /*background-image: url(radio.png);*/
+    background: #ffa640;
+    box-shadow: inset 2px 2px 1px #d97400;
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 1px 1px 0 #d97400;
+  }
+  /* STOP HERE. The rest of this CSS is for style purposes only and is not needed for the demo to function.
+                (but be sure to substitue out the LESS variables/mixins I used above)
+     ---------------------------------------------------------------------------------------------------- */
+  /* =VARIABLES (LESS @variables do not get compiled into the final CSS file)
+     ---------------------------------------------------------------------------------------------------- */
+  /*cream*/
+  /*purple/grey*/
+  /*mud*/
+  /*lime*/
+  /*grey*/
+  /*grey*/
+  /*grey*/
+  /*orange*/
+  /* =MIXINS
+     ---------------------------------------------------------------------------------------------------- */
+  /* =BASE STYLES
+     ---------------------------------------------------------------------------------------------------- */
+  h2{
+    color: #4f4351;
+    letter-spacing: -0.05em;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+  }
+  h1 {
+    background: rgba(79, 67, 81, 0.1);
+    border-bottom: 1px solid rgba(255, 250, 239, 0.9);
+    outline: 1px solid rgba(79, 67, 81, 0.2);
+    margin: 0 auto;
+    padding: 0.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  /* .control-label {
+    color: #9a8864;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 1em 0;
+  }
+  .control-group {
+    background: rgba(233, 229, 155, 0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    overflow: hidden;
+    padding: 1em;
+    width: auto;
+  } */
+  
+    
+
+  [type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+  
+  #dateofbirth {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 180px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin: 30px;
+    opacity: 0.9;
+  }
