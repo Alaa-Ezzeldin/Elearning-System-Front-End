@@ -1,0 +1,41 @@
+<div class="login-block">
+        <div class="container">
+          <!-- <div class="row "> -->
+            <!-- <div class="col login-sec"> -->
+              <h2 id='loginNow' class="text-center">Login Now</h2>
+              <hr>
+              <div class= row >
+              <form [formGroup]="loginForm" class="login-form col-xl" (ngSubmit)="onSubmit()" >
+                <div class="form-group">
+                  <label class="text-uppercase">email</label>
+                  <input formControlName="email" type="email" class="form-control" placeholder="Enter your email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Email is required</div>
+                    <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                </div>
+                  <br>
+                </div>
+      
+                <div class="form-group">
+                  <label class="text-uppercase">Password</label>
+                  <input formControlName="password" type={{input}}  class="form-control" placeholder="Password" id="passwordInput"[ngClass]="{ 'is-invalid': submitted && f.password.errors }" >
+                  
+                  <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">Password is required</div>
+                </div>
+      
+                  <input type="checkbox" id="checkBoxPassword" (click)="toggleShow()" > Show Password
+                  <br>
+                </div>
+      
+                <!-- <button class="btn btn-primary btn-lg btn-block btn-outline-success text-uppercase" type="submit" id="btnLogin"> login </button>   -->
+                <button class="btn" type="submit"id="btnLogin">Login</button>
+
+                <p>Not registered? <a routerLink="/register"> Register Now</a> </p>
+      
+                </form>
+              </div>
+              <!-- </div> -->
+            <!-- </div> -->      
+          </div>
+        </div>

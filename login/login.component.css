@@ -1,0 +1,89 @@
+.login-block{
+    background-image: url("img/school-supplies-on-wooden-background-PVBYVFH-1.jpg");
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    /* background:rgba(255,255,255,0.5); */
+}
+.container{
+    /*padding-bottom: 7%;*/
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: 15%;
+    margin-top:50px;
+    /* background: #212c39; */
+    background: #dcc7aa;
+    border-radius: 20px;
+    width: 500px; 
+    position:relative;
+    height: 600px;
+    padding-top: 40px;
+    padding-left: 5%;;
+    padding-right: 5%;  
+    color: #4f4351;
+    box-shadow:0 0 50px rgba(79, 67, 81, 0.6);
+
+}
+
+hr{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4f4351;
+    margin-bottom: 30px;
+    width:30%;
+    height:5px; 
+    border-radius: 10px;
+}
+
+#loginNow{
+    margin-bottom:0px; 
+    font-weight:800; 
+    font-size:30px; 
+    color:#4f4351;
+}
+
+#btnLogin{
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: #5a6576;
+    /* border-color:  #4f4351; */
+    box-shadow:0 0 5px  #4f4351;
+    color:#dcc7aa;
+    width: 100%;
+    float: center;
+    font-size: 25px;
+    /* background-color: #d97400; */
+    /* position: absolute; */
+}
+#btnLogin:active{
+    background:rgba(0,0,0,0.5);
+    color: #6B7A8F;
+}
+
+input{
+    background-color:#F7F7F7;
+    opacity: 0.9;
+}
+
+#checkBoxPassword{
+margin-top: 10px;
+margin-left: 5px;
+}
+
+p{
+    margin-top: 3%;
+    text-align : center;
+    color:#4f4351;
+    margin-bottom: 50%;
+
+}
+
+a{
+    font-size: 20px;
+    color: #d97400;
+}

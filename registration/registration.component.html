@@ -1,0 +1,114 @@
+<div class="login-block">
+  <div class="container">
+
+        <h2 id='registerNow' class="text-center">Register Now</h2>
+        <hr>
+        <div class="row">
+          <!--form starts here-->
+        <form [formGroup]="registerForm" class="login-form col-xl" (ngSubmit)="onSubmit()" >  
+
+          <!--first and last name div-->
+            <div class="firstAndLastName">
+                <div class="FirstName">
+
+                  <div class="form-group">
+                      <label class="text-uppercase">First Name</label>
+                      <input formControlName="firstName" type="text" class="form-control" placeholder="First Name"[ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                      <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                          <div *ngIf="f.username.errors.required">First Name is required</div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="LastName">
+                    <div class="form-group">
+                      <label class="text-uppercase">Last Name</label>
+                      <input formControlName="lastName" type="text" class="form-control" placeholder="Last Name"[ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                      <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                          <div *ngIf="f.username.errors.required">Last Name is required</div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <br> <br>
+            <!--end of first and last name div-->
+            <!--username-->
+          <div class="form-group">
+              <label class="text-uppercase">Username</label>
+              <input formControlName="username" type="text" class="form-control" placeholder="username"[ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+              <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                  <div *ngIf="f.username.errors.required">Username is required</div>
+              </div>
+          </div>
+
+          <!--email-->
+          <div class="form-group">
+            <label class="text-uppercase">email</label>
+            <input formControlName="email" type="email" class="form-control" placeholder="Enter your email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+            </div>
+          </div>
+
+          <!--password-->
+          <div class="form-group">
+            <label class="text-uppercase">Password</label>
+            <input formControlName="password" type="password" class="form-control" placeholder="Password" id="passwordInput"[ngClass]="{ 'is-invalid': submitted && f.password.errors }" >
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required">Password is required</div>
+          </div>
+          </div>
+
+          <!--confirm password-->
+          <div class="form-group">
+              <label class="text-uppercase">Confirm your Password</label>
+              <input formControlName="confirmPassword" type="password" class="form-control" placeholder="Password" id="confirmPasswordInput"[ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" >
+  
+              <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                <div *ngIf="f.confirmPassword.errors.required">Password is required</div>
+                <div *ngIf="f.confirmPassword.errors.notMatch" >Password doesn't match the first!</div>
+            </div>
+          </div>
+
+          <!--gender-->
+          <!-- <div  class="form-group" >
+              <label class="text-uppercase">Select type</label>
+              <select class="btn dropdown-toggle col" placeholder="Select Gender"formControlName="gender">
+                  <option class="hidden"  selected disabled> Select Type</option>
+                  <option class="typeOption">male</option>
+                  <option class="typeOption">female</option>
+              </select>
+          </div> -->
+
+          <label class="text-uppercase">Gender</label>
+           <div class="radio" *ngFor="let gender of genders">
+              <label >
+                <input class = "box" type="radio" [value]="gender" formControlName = "gender">{{gender}}
+              </label>
+            </div>
+            
+            <!-- <form class="form-vertical"> -->
+
+                <!-- <div class="control-group"> -->
+                  <!-- <label class="control-label">Radio buttons</label> -->
+                  <!-- <div class="controls" formControlName = "gender">
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" checked="checked" formControlName = "genderMale">
+                    <label class="radio" for="optionsRadios1"> Male </label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" formControlName = "genderFemale">
+                    <label class="radio" for="optionsRadios2"> Female </label>
+                  </div> -->
+                <!-- </div> -->
+
+            <!-- </form> -->
+
+            <label class="text-uppercase">Date Of Birth </label>
+            <input type="date" name="dateofbirth" id="dateofbirth" formControlName = "dateOfBirth" ngbDatepicker #d="ngbDatepicker">
+        <br>
+
+        <button class="btn" type="submit"id="btnLogin">Enroll</button>
+
+              </form>
+            </div>
+    </div>
+  </div>
