@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-sm fixed-top mainNav" style="background-color:#dcc7aa;color:#6b7a8f">
+    <!-- logo -->
+    <a class="navbar-brand" href="#" style="margin:auto 2.5%">
+      <img src="img/ninja.png" alt="Logo" >
+    </a>
+
+
+
+    <!-- search form -->
+    <form class="form-inline" action="" style="width:35%;margin:auto 2.5%">
+      <input type="text" name="searchword" class="form-control mr-sm-2" placeholder="Search" style="width:75%;">
+      <button class="btn" type="submit" >Search</button>
+    </form>
+    <!-- navbar-->
+    <ul class="navbar-nav mr-auto d-inline-flex" style="width:40%;position:relative;left: 100px; ">
+      <!-- Profile Image -->
+      <li class="nav-item flex-fill" >
+        <a class="nav-link" href=""><img src="img/man.png" alt="Logo" style="margin:auto 8px;">profile</a>
+      </li>
+      <!-- Rank -->
+      <li class="nav-item navbar-text flex-fill" >
+        rank: 1000
+      </li>
+
+      <!-- notifications -->
+      <li class="nav-item dropdown flex-fill" >
+        <a class="nav-link dropdown-toggle flex-fill" href="" data-toggle="dropdown">notifications</a>
+        <div class="dropdown-menu dropdown">
+          <a class="dropdown-item">not1</a>
+          <a class="dropdown-item">not2</a>
+          <a class="dropdown-item">not3</a>
+        </div>
+      </li>
+      <!-- Categories -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle flex-fill" id="navbardrop" href="" data-toggle="dropdown">categories</a>
+        <div class="dropdown-menu dropdown">
+          <a class="dropdown-item">cat1</a>
+          <a class="dropdown-item">cat2</a>
+          <a class="dropdown-item">cat3</a>
+        </div>
+      </li>
+      <!-- Settings -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle flex-fill" id="navbardrop" href="" data-toggle="dropdown">settings</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item">s1</a>
+          <a class="dropdown-item">s2</a>
+          <a class="dropdown-item">s3</a>
+        </div>
+      </li>
+    </ul>
+
+  </nav>
+
+
+  <nav class="sidebarMenu">
+    <ul>
+      <li>
+        <a class="Menu" href="Home.html">
+          <i class="fa fa-home"></i><h6>Home</h6>
+        </a>
+      </li>
+      <li>
+        <a class="Menu" href="#">
+          <i class="fa fa-user"></i><h6>My courses</h6>
+        </a>
+      </li>
+      <li>
+        <a class="Menu" href="teacher_dashboard.html">
+          <i class="fas fa-chalkboard-teacher"></i><h6>Teacher dashboard</h6>
+        </a>
+      </li>
+      <li>
+        <a class="Menu" href="parent_dashboard.html">
+          <i class="fas fa-user-edit"></i><h6>Parent dashboard</h6>
+        </a>
+      </li>
+      <li>
+        <a class="Menu" href="#">
+          <i class="fas fa-save"></i><h6>Saved courses</h6>
+        </a>
+      </li>
+      <li>
+        <a class="Menu" href="#">
+          <i class="fas fa-check-square"></i><h6>accomplished courses</h6>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <br>
+  <br>
+
+
+
+  <div class="container emp-profile">
+    <form method="post">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile-img">
+            <img class="profile_pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
+            <div class="file btn btn-lg btn-primary">
+              Change Photo
+              <input type="file" name="file"/>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="profile-head">
+            <h5>
+              NAME
+            </h5>
+            <h6>
+              About Me
+            </h6>
+            <p class="proile-rating">RANKINGS : <span>1000</span></p>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Completed Courses</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile-work">
+            <p>Contact Me On</p>
+            <div id="social_icons" class="col-md-2 col-lg-2 text-center mx-auto my-4 cont_me">
+              <!-- Facebook -->
+              <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus-g"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin-in"> </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="tab-content profile-tab" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="row">
+                <div class="col-md-4">
+                  <label>User Id</label>
+                </div>
+                <div class="col-md-6">
+                  <p>User Id here</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>User Name</label>
+                </div>
+                <div class="col-md-6">
+                  <p>User Name here</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>First Name</label>
+                </div>
+                <div class="col-md-6">
+                  <p>First name here</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Last Name</label>
+                </div>
+                <div class="col-md-6">
+                  <p>Last name here</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Email</label>
+                </div>
+                <div class="col-md-6">
+                  <p>Email here</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Gender</label>
+                </div>
+                <div class="col-md-6">
+                  <p>Gender here</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Date Of birth</label>
+                </div>
+                <div class="col-md-6">
+                  <p>dd/mm/yy</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="row">
+                <div class="col-md-12 col-lg-6 col-xl-4">
+                  <div class="completed_course">
+                    <i class="fas fa-check-double"></i>
+                    <div class="ad">
+                      <a href="#">Course Name here Course Name here Course Name here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 col-xl-4">
+                  <div class="completed_course">
+                    <i class="fas fa-check-double"></i>
+                    <div class="ad">
+                      <a href="#">Course Name here</a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 col-xl-4">
+                  <div class="completed_course">
+                    <i class="fas fa-check-double"></i>
+                    <div class="ad">
+                      <a href="#">Course Name here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 col-xl-4">
+                  <div class="completed_course">
+                    <i class="fas fa-check-double"></i>
+                    <div class="ad">
+                      <a href="#">Course Name here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+
+  <div class="footer">
+    <footer class="page-footer font-small mdb-color pt-4">
+      <!-- Footer Links -->
+
+
+      <div class="container text-center text-md-left">
+
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <hr class="w-100 clearfix d-md-none">
+
+          <!-- Grid column -->
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Top Courses</h6>
+
+            <div class="Top_Courses">
+              <p>
+                <a href="#!">Mathematics</a>
+              </p>
+              <p>
+                <a href="#!">Cloud Computing</a>
+              </p>
+              <p>
+                <a href="#!">Ethical hacking</a>
+              </p>
+            </div>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Most Rated courses</h6>
+            <div class="Most_Rated">
+              <p>
+                <a href="#!">English</a>
+              </p>
+              <p>
+                <a href="#!">Cyper Security</a>
+              </p>
+            </div>
+
+
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none">
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Categories</h6>
+
+            <div class="categories">
+              <p>
+                <a href="#!">Math</a>
+              </p>
+              <p>
+                <a href="#!">Science</a>
+              </p>
+              <p>
+                <a href="#!">Computer Science</a>
+              </p>
+              <p>
+                <a href="#!">Language</a>
+              </p>
+            </div>
+
+          </div>
+
+
+          <hr class="w-100 clearfix d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact US</h6>
+            <p><i class="fas fa-home mr-3"></i> Cairo, ASU, Egypt</p>
+            <p><i class="fas fa-envelope mr-3"></i> e_learning_project_team@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Footer links -->
+
+        <hr>
+
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8">
+
+            <!--Copyright-->
+            <p class="text-center text-md-left">© 2019 Copyright:
+              <a href="">
+                <strong id="team_pro">  E_learning Project Team</strong>
+              </a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+
+            <!-- Social buttons -->
+            <div id="social_icons" class="text-center text-md-right">
+              <!-- Facebook -->
+              <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus-g"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin-in"> </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+    </footer>
+  </div>
+</body>
+</html>
