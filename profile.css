@@ -124,3 +124,60 @@ body{
   margin-left: 11%;
   margin-top: -10%;
 }
+.col-md-9{
+  padding-left: 15%;
+}
+.col-md-9 .row{
+  margin-bottom: 5%;
+}
+#user_id_input{
+  margin-left:  12.5%;
+}
+#user_name_input{
+  margin-left: 8%;
+}
+#user_firstname_input{
+  margin-left: 8%;
+}
+#user_lastname_input{
+  margin-left: 8%;
+}
+#user_password_input{
+  margin-left: 4%;
+}
+#user_email_input{
+  margin-left: 14%;
+}
+#user_date_input{
+  margin-left: 5%;
+}
+#user_facebook_input{
+  margin-left: 3%
+}
+#user_twitter_input{
+  margin-left: 6%;
+}
+#user_linkedin_input{
+  margin-left: 4%;
+}
+#user_google_input{
+  margin-left: 5%;
+}
+.gender_user{
+  margin-left: -2%;
+}
+#save_changes{
+  margin-left: 10%;
+  margin-top: 10%;
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+  text-decoration-color: red;
+}
+.helped_text{
+  margin-left: 21.5%;
+}

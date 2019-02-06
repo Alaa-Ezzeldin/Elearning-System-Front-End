@@ -112,172 +112,112 @@
 
 
   <div class="container emp-profile">
-    <form method="post" action="editing_profile.html">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="profile-img">
-            <img class="profile_pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
-            <div class="file btn btn-lg btn-primary">
-              Change Photo
-              <input type="file" name="file"/>
-            </div>
+    <form method="post">
+      <div class="col-md-9">
+        <div class="row">
+          <label for="user_id_input">User Id:</label>
+          <div id="user_id_input"class="col-md-5">
+            <input class="form-control"  type="text" name="user_id_input" placeholder="id here" disabled>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="profile-head">
-            <h5>
-              NAME
-            </h5>
-            <h6>
-              About Me
-            </h6>
-            <p class="proile-rating">RANKINGS : <span>1000</span></p>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Information</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Completed Courses</a>
-              </li>
-            </ul>
+        <div class="row">
+          <label for="user_name_input">User Name:</label>
+          <div id="user_name_input"class="col-md-5">
+            <input class="form-control" type="text" name="user_name_input" placeholder="User Name here" disabled>
           </div>
         </div>
-        <div class="col-md-2">
-          <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="profile-work">
-            <p>Contact Me On</p>
-            <div id="social_icons" class="col-md-2 col-lg-2 text-center mx-auto my-4 cont_me">
-              <!-- Facebook -->
-              <ul class="list-unstyled list-inline text-center">
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-fb mx-1">
-                    <i class="fab fa-facebook-f"> </i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-tw mx-1">
-                    <i class="fab fa-twitter"> </i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-gplus mx-1">
-                    <i class="fab fa-google-plus-g"> </i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-li mx-1">
-                    <i class="fab fa-linkedin-in"> </i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div class="row">
+          <label for="user_firstname_input">First Name:</label>
+          <div id="user_firstname_input"class="col-md-5">
+            <input class="form-control" type="text" name="user_firstname_input" placeholder="firstname here" required>
           </div>
         </div>
-        <div class="col-md-8">
-          <div class="tab-content profile-tab" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <div class="row">
-                <div class="col-md-4">
-                  <label>User Id</label>
-                </div>
-                <div class="col-md-6">
-                  <p>User Id here</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <label>User Name</label>
-                </div>
-                <div class="col-md-6">
-                  <p>User Name here</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <label>First Name</label>
-                </div>
-                <div class="col-md-6">
-                  <p>First name here</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <label>Last Name</label>
-                </div>
-                <div class="col-md-6">
-                  <p>Last name here</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <label>Email</label>
-                </div>
-                <div class="col-md-6">
-                  <p>Email here</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <label>Gender</label>
-                </div>
-                <div class="col-md-6">
-                  <p>Gender here</p>
-                </div>
-              </div>
+        <div class="row">
+          <label for="user_lasttname_input">Last Name:</label>
+          <div id="user_lastname_input"class="col-md-5">
+            <input class="form-control" type="text" name="user_lastname_input" placeholder="lastname here" required>
+          </div>
+        </div>
+        <div class="row">
+          <label for="user_password_input">New password:</label>
+          <div id="user_password_input"class="col-md-6">
+            <input type="password" class="form-control" name="password" >
+          </div>
+        </div>
+        <div class="row">
+          <label for="user_confirmpassword_input">Confirm password:</label>
+          <div id="user_confirmpassword_input"class="col-md-6">
+            <input type="password" class="form-control" name="confirm_password" >
+          </div>
+        </div>
+        <div class="row">
+          <label for="user_email_input">Email:</label>
+          <div id="user_email_input"class="col-md-6">
+            <input type="email" class="form-control" placeholder="email here" disabled>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 gender_user">
+            <p>Gender:</p>
+          </div>
+          <div class="col-md-2">
+            <input class="form-check-input" type="radio" name="gender" id="male_user"   disabled>
+            <label class="form-check-label" for="male_user">
+              Male
+            </label>
+          </div>
+          <div class="col-md-2">
+            <input class="form-check-input" type="radio" name="gender" id="female_user"  disabled>
+            <label class="form-check-label" for="female_user">
+              Female
+            </label>
+          </div>
+        </div>
 
-              <div class="row">
-                <div class="col-md-4">
-                  <label>Date Of birth</label>
-                </div>
-                <div class="col-md-6">
-                  <p>dd/mm/yy</p>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <div class="row">
-                <div class="col-md-12 col-lg-6 col-xl-4">
-                  <div class="completed_course">
-                    <i class="fas fa-check-double"></i>
-                    <div class="ad">
-                      <a href="#">Course Name here Course Name here Course Name here</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12 col-lg-6 col-xl-4">
-                  <div class="completed_course">
-                    <i class="fas fa-check-double"></i>
-                    <div class="ad">
-                      <a href="#">Course Name here</a>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="col-md-12 col-lg-6 col-xl-4">
-                  <div class="completed_course">
-                    <i class="fas fa-check-double"></i>
-                    <div class="ad">
-                      <a href="#">Course Name here</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12 col-lg-6 col-xl-4">
-                  <div class="completed_course">
-                    <i class="fas fa-check-double"></i>
-                    <div class="ad">
-                      <a href="#">Course Name here</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
+        <div class="row">
+          <label for="user_date_input">Date of birth:</label>
+          <div id="user_date_input"class="col-md-6">
+            <input type="date" name="user_date_input" ">
           </div>
         </div>
+        <p class="sepetator">----------------------------------------------------------------------------------------------</p>
+        <div class="row">
+          <label for="user_facebook_input">Facebook Link:</label>
+          <div id="user_facebook_input" class="col-md-8">
+            <input type="password" class="form-control" name="facebook_link" placeholder="Facebook Link optional" >
+          </div>
+          <small class="form-text text-muted helped_text">
+            Optional.appear to other to contact u.
+          </small>
+        </div>
+        <div class="row">
+          <label for="user_twitter_input">Twitter Link:</label>
+          <div id="user_twitter_input" class="col-md-8">
+            <input type="password" class="form-control" name="twitter_link" placeholder="Twitter Link optional" >
+          </div>
+          <small class="form-text text-muted helped_text">
+            Optional.appear to other to contact u.
+          </small>
+        </div>
+        <div class="row">
+          <label for="user_linkedin_input">Linkedin Link:</label>
+          <div id="user_linkedin_input" class="col-md-8">
+            <input type="password" class="form-control" name="linkedin_link" placeholder="Linkedin Link optional">
+          </div>
+          <small class="form-text text-muted helped_text">
+            Optional.appear to other to contact u.
+          </small>
+        </div>
+        <div class="row">
+          <label for="user_google_input">Google Link:</label>
+          <div id="user_google_input" class="col-md-8">
+            <input type="password" class="form-control" name="google_link" placeholder="Google Link optional">
+          </div>
+          <small class="form-text text-muted helped_text">
+            Optional.appear to other to contact u.
+          </small>
+        </div>
+        <input id="save_changes"type="submit" name="save" value="Save Changes">
       </div>
     </form>
   </div>
