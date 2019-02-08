@@ -56,3 +56,24 @@ body{
   background-color: gray;
   opacity: 0.5;
 }
+#invite_user{
+  margin-top: 21%;
+  margin-left: 25%;
+  height: 12%;
+  width: 49%;
+  background-color: #805500;
+}
+#add_course_toclassroom{
+  margin-left: 88%;
+  margin-top: -4%;
+}
+.remove_course{
+  margin-top: 17%;
+  margin-bottom: 5%;
+}
+.alg_bo{
+  margin-bottom: 9%;
+}
+.modal-ku {
+  margin-top: 10%;
+}

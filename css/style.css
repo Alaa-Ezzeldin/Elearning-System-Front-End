@@ -16,14 +16,19 @@ body{
     box-sizing: border-box;
 
 }
-
+.card-body{
+  height: 250px;
+}
+/* .item a{
+  position:absolute;
+  top: 440px;
+} */
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
-
 .sidebarMenu {
 
     position: fixed;
@@ -196,16 +201,23 @@ width: 1100px;
 #add_class_room{
   background: #f7882f;
   color:#f7c331;
-  position: absolute;
-  left: 78%;
-  top: 10%;
+  position: relative;
+  left: 850px;
+  top: -30px;
 }
 #add_course{
   background: #f7882f;
   color:#f7c331;
-  position: absolute;
-  left: 77%;
-  top: 10%;
+  position: relative;
+  left: 850px;
+  top: -30px;
+}
+#add_child{
+  background: #f7882f;
+  color:#f7c331;
+  position: relative;
+  left: 850px;
+  top: -30px;
 }
 .navs_pages{
   padding-top: 50px;
@@ -226,5 +238,33 @@ align-self: center;
 background-color: orange;
 }
 .card-title{
-  padding-left: 80px;
+ text-align: center;
+}
+
+.thumbnail{
+  height: 600px;
+  /* width: 350px; */
+}
+.caption{
+  height: 500px;
+}
+.caption img{
+  height: 400px;
+  width: 250px;
+}
+.sug_header{
+  text-align: center;
+}
+
+.enroll_child_but{
+position: absolute;
+top: 400px;
+}
+.card-img-top{
+  height: 220px;
+  width: 338px;
+}
+.navs_pages .nav-link.active{
+  border: none;
+  border-bottom:2px solid orange;
 }

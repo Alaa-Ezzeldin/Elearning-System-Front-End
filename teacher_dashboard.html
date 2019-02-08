@@ -21,7 +21,7 @@
 </head>
 <body>
 
-	<iframe src="media/mu2.ogg" allow="autoplay" id="audio" style="display:none"></iframe>
+	<!-- <iframe src="media/mu2.ogg" allow="autoplay" id="audio" style="display:none"></iframe> -->
 	<!-- navbar parent start-->
 	<nav class="navbar navbar-expand-sm fixed-top mainNav" style="background-color:#dcc7aa;color:#6b7a8f">
 		<!-- logo -->
@@ -83,7 +83,7 @@
 	<nav class="sidebarMenu">
 		<ul>
 			<li>
-				<a class="Menu" href="Home.html">
+				<a class="Menu" href="#">
 					<i class="fa fa-home"></i><h6>Home</h6>
 				</a>
 			</li>
@@ -93,12 +93,12 @@
 				</a>
 			</li>
 			<li>
-				<a class="Menu" href="teacher_dashboard.html">
+				<a class="Menu" href="#">
 					<i class="fas fa-chalkboard-teacher"></i><h6>Teacher dashboard</h6>
 				</a>
 			</li>
 			<li>
-				<a class="Menu" href="parent_dashboard.html">
+				<a class="Menu" href="#">
 					<i class="fas fa-user-edit"></i><h6>Parent dashboard</h6>
 				</a>
 			</li>
@@ -163,11 +163,11 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="card-img-top" src="img/math.jpg"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#"><h4 class="card-title">Mathematics</h4></a>
+		                <p class="card-text">This Course for preparatory stuedents you will learn new methods for math</p>
 									</div>
 								</div>
 							</div>
@@ -175,24 +175,24 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="card-img-top" src="img//cloud.jpg"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
-									</div>
+										<a href="#"><h4 class="card-title">Cloud Computing</h4></a>
+		                <p class="card-text">Cloud computing is shared pools of configurable computer system resources and higher-level services that can be rapidly provisioned with minimal management effort, often over the Internet.</p>
+		                </div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="card-img-top" src="img/hack.jpg"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
-									</div>
+										<a href="#"><h4 class="card-title">Ethical Hacking</h4></a>
+		                <p class="card-text">In this course you will learn new method for hacking and security.</p>
+		                </div>
 								</div>
 							</div>
 						</div>
@@ -250,19 +250,45 @@
 			<div class="tab-pane container fade" id="menu1">
 				<div class="container">
 					<!-- <span class="badge">Suggested Courses</span> -->
-					<button id="add_class_room" type="button" class="btn">
+					<button id="add_class_room" type="button" class="btn" data-toggle="modal" data-target="#myModal2">
 						<i class="fas fa-plus"></i>
 						Creat Classroom
 					</button>
+					<div class="modal fade" id="myModal2">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">New Classroom Creation</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<!-- Modal body -->
+								<div class="modal-body">
+									<form method="post">
+										<label for="New_classroom_name">Classroom Name</label>
+										<input id="New_classroom_name" type="text" name="Corce_name" value="" placeholder="Classroom Name" required>
+										<br>
+										<p>                         ---------------------------------------------------</p>
+										<label for="New_classroom_description">About this classroom</label>
+										<textarea id="New_classroom_description" name="name" rows="8" cols="40" placeholder="Classroom Description" required></textarea>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+											<input type="submit" value="Creat Classroom" class="btn btn-dark"></input>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="row">
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="card-img-top" src="img/AinShamsUniv.png"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#"><h4 class="card-title">4th year ASU</h4></a>
+										<p class="card-text">This Classroom for 4th year ASU engineer studen</p>
 									</div>
 								</div>
 							</div>
@@ -270,11 +296,11 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="card-img-top" src="img/civil.png"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
+										<a href="#"><h4 class="card-title">First year Civil student</h4></a>
+										<p class="card-text">This classroom for First year Civil student.</p>
 									</div>
 								</div>
 							</div>
@@ -282,59 +308,11 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+									<img class="card-img-top" src="img/344142-PAM4RR-780.jpg"
 									alt="Card image cap">
 									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
+										<a href="#"><h4 class="card-title">Preparatory Classroom</h4></a>
+										<p class="card-text">This classroom for preparatory student at Omar Ibn Elkhtab Shcool.</p>
 									</div>
 								</div>
 							</div>
