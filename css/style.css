@@ -261,8 +261,10 @@ position: absolute;
 top: 400px;
 }
 .card-img-top{
+  /* height: 220px;
+  width: 338px; */
   height: 220px;
-  width: 338px;
+  width: 100%;
 }
 .navs_pages .nav-link.active{
   border: none;
@@ -287,6 +289,14 @@ top: 400px;
   width: 70%;
   margin-top: 1.5%;
 }
-.bod_size{
+/* .bod_size{
   height: 130px;
+} */
+.enroll_but{
+  margin-top: 17%;
+  margin-bottom: 5%;
+}
+.item{
+  /* height: 500px; */
+  width: 350px;
 }
