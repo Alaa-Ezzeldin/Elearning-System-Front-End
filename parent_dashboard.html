@@ -128,7 +128,7 @@
 		<div class="tab-content">
 			<div class="tab-pane container active" id="home">
 				<div class="container">
-					<button id="add_course" type="button" class="btn" data-toggle="modal" data-target="#myModal">
+					<button id="add_child" type="button" class="btn" data-toggle="modal" data-target="#myModal">
 						<img src="img/adduser.png" id="add_child_photo">
 						Add New Children
 					</button>
@@ -186,11 +186,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="img-circle" src="img/user.png"
+									<img class="img-circle" src="img/avatar1.PNG"
 									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Child Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<div class="card-body bod_size">
+										<a href="#"><h4 class="card-title">Mohamed</h4></a>
 									</div>
 								</div>
 							</div>
@@ -198,11 +197,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="img-circle" src="img/user.png"
+									<img class="img-circle" src="img/avatar2.PNG"
 									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Child Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
+									<div class="card-body bod_size">
+										<a href="#"><h4 class="card-title">Ahmed</h4></a>
 									</div>
 								</div>
 							</div>
@@ -210,11 +208,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="img-circle" src="img/user.png"
+									<img class="img-circle" src="img/avatar4.PNG"
 									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Child Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
+									<div class="card-body bod_size">
+										<a href="#"><h4 class="card-title">Aya</h4></a>
 									</div>
 								</div>
 							</div>
@@ -222,47 +219,10 @@
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
-									<img class="img-circle" src="img/user.png"
+									<img class="img-circle" src="img/avatar5.PNG"
 									alt="Card image cap">
-									<div class="card-body">
+									<div class="card-body bod_size">
 										<a href="#"><h4 class="card-title">Child Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="img-circle" src="img/user.png"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Child Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="img-circle" src="img/user.png"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Child Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="img-circle" src="img/user.png"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Child Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
 									</div>
 								</div>
 							</div>
@@ -274,6 +234,129 @@
 				<div class="container">
 					<!-- <span class="badge">Suggested Courses</span> -->
 					<div class="row">
+						<div class="modal fade" id="myModal2">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<!-- Modal Header -->
+									<div class="modal-header">
+										<h4 class="modal-title">Enroll</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+									<!-- Modal body -->
+									<div class="modal-body">
+										<small>Select the Child you want to enroll to :</small>
+
+										<form method="post">
+											<input type="text" id="course_name_style" class="form-control scrollabletextbox" name="course-name" value="course name here" disabled>
+											<hr>
+											<div class="row">
+
+												<div class="col-md-12 col-lg-6 col-xl-4">
+													<div class="form-check enroll_child_modal">
+
+														<img src="img\avatar5.PNG" alt="">
+														<!-- <a target="_blank" rel="noopener noreferrer" href="#" >Course Name here Course Name here</a> -->
+														<div class="name_style">
+															<input class="form-check-input" type="checkbox" id="checkbox1" value="option1">
+															<label class="form-check-label" for="checkbox1" >
+																<p>name</p>
+															</label>
+														</div>
+
+													</div>
+												</div>
+												<div class="col-md-12 col-lg-6 col-xl-4">
+													<div class="form-check enroll_child_modal">
+
+														<img src="img\avatar1.PNG" alt="">
+														<!-- <a target="_blank" rel="noopener noreferrer" href="#" >Course Name here Course Name here</a> -->
+														<div class="name_style">
+															<input class="form-check-input" type="checkbox" id="checkbox2" value="option2">
+															<label class="form-check-label" for="checkbox2" >
+																<p>name</p>
+															</label>
+														</div>
+
+													</div>
+												</div>
+												<div class="col-md-12 col-lg-6 col-xl-4">
+													<div class="form-check enroll_child_modal">
+
+														<img src="img\avatar1.PNG" alt="">
+														<!-- <a target="_blank" rel="noopener noreferrer" href="#" >Course Name here Course Name here</a> -->
+														<div class="name_style">
+															<input class="form-check-input" type="checkbox" id="checkbox3" value="option3">
+															<label class="form-check-label" for="checkbox3" >
+																<p>name</p>
+															</label>
+														</div>
+
+													</div>
+												</div>
+												<div class="col-md-12 col-lg-6 col-xl-4">
+													<div class="form-check enroll_child_modal">
+
+														<img src="img\avatar1.PNG" alt="">
+														<!-- <a target="_blank" rel="noopener noreferrer" href="#" >Course Name here Course Name here</a> -->
+														<div class="name_style">
+															<input class="form-check-input" type="checkbox" id="checkbox4" value="option4">
+															<label class="form-check-label" for="checkbox4" >
+																<p>name</p>
+															</label>
+														</div>
+
+													</div>
+												</div>
+
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+												<input type="submit" value="Enroll" class="btn btn-dark"></input>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-6 col-xl-4">
+							<div class="item">
+								<div class="card mb-2">
+									<img class="card-img-top" src="img/math_child.jpg"
+									alt="Card image cap">
+									<div class="card-body">
+										<a href="#"><h4 class="card-title">Mathematics</h4></a>
+										<p class="card-text">this course for primary stage</p>
+										<button type="button" name="button" class="btn btn-primary enroll_child_but" data-toggle="modal" data-target="#myModal2">Enroll Child</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-6 col-xl-4">
+							<div class="item">
+								<div class="card mb-2">
+									<img class="card-img-top" src="img/science.jpg"
+									alt="Card image cap">
+									<div class="card-body">
+										<a href="#"><h4 class="card-title">Science for primary stage</h4></a>
+										<p class="card-text">Science is amazing</p>
+										<button type="button" name="button" class="btn btn-primary enroll_child_but" data-toggle="modal" data-target="#myModal2">Enroll Child</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-6 col-xl-4">
+							<div class="item">
+								<div class="card mb-2">
+									<img class="card-img-top" src="img/math.jpg"
+									alt="Card image cap">
+									<div class="card-body">
+										<a href="#"><h4 class="card-title">Math</h4></a>
+										<p class="card-text">This Course for preparatory stuedents you will learn new methods for math.</p>
+										<button type="button" name="button" class="btn btn-primary enroll_child_but" data-toggle="modal" data-target="#myModal2">Enroll Child</button>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="col-md-12 col-lg-6 col-xl-4">
 							<div class="item">
 								<div class="card mb-2">
@@ -282,85 +365,7 @@
 									<div class="card-body">
 										<a href="#"><h4 class="card-title">Course Name</h4></a>
 										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-										<a href="#" class="btn btn-primary">Enroll Child</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
-										<a href="#" class="btn btn-primary">Enroll Child</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
-										<a href="#" class="btn btn-primary">Enroll Child</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-										<a href="#" class="btn btn-primary">Enroll Child</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-										<a href="#" class="btn btn-primary">Enroll Child</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-										<a href="#" class="btn btn-primary">Enroll Child</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="item">
-								<div class="card mb-2">
-									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-									alt="Card image cap">
-									<div class="card-body">
-										<a href="#"><h4 class="card-title">Course Name</h4></a>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the	card's content.</p>
-										<a href="#" class="btn btn-primary">Enroll Child</a>
+										<button type="button" name="button" class="btn btn-primary enroll_child_but" data-toggle="modal" data-target="#myModal2">Enroll Child</button>
 									</div>
 								</div>
 							</div>

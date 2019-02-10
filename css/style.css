@@ -268,3 +268,25 @@ top: 400px;
   border: none;
   border-bottom:2px solid orange;
 }
+.enroll_child_modal img{
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  display: block;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  align-self: center;
+  background-color: orange;
+}
+.name_style{
+  margin-left: 10%;
+  margin-top: 5%;
+}
+#course_name_style{
+  width: 70%;
+  margin-top: 1.5%;
+}
+.bod_size{
+  height: 130px;
+}
