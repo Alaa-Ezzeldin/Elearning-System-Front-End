@@ -30,9 +30,19 @@ body{
   margin-left: 21%;
 
 }
+
 .delete-que{
-  margin-left: 95%;
-  margin-top: -4.5%;
+  margin-left: 93%;
+  margin-top: -2%;
+  margin-bottom: 1%;
+}
+.questions-mark{
+  margin-top: 3%;
+
+}
+.mark-input{
+  margin-top: -5%;
+  margin-left: 15%;
 }
 #add-que{
   margin-left: 86%;
@@ -47,11 +57,12 @@ body{
   margin-left: 50%;
 }
 .ques-c{
-  margin-bottom: 3%;
+  margin-top: 4%;
 }
 section{
   background-color: white;
-  margin-bottom: 4%;
+  margin-bottom: 7%;
+  padding-bottom: 4%;
 }
 .time-c{
   margin-left: 45%;

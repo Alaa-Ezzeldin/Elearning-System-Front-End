@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <title>Quiz</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/quiz.css">
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -31,69 +31,354 @@
 
       </div>
       <hr >
+
+
+
       <div class="quiz_description">
         <h5>Questions</h5>
         <hr width="50%">
-        <button type="button" class="btn btn-dark" id="add-que">add Question</button>
+        <button id="add-que" type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
+          add Question
+        </button>
+        <!-- question modal  -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Add New Question</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form method="post">
+                  <p>Q1)</p>
+                  <textarea name="name" class="form-control " rows="4" style="resize:none" placeholder="Question here"></textarea>
+                  <br>
+                  <label for="ques-mark" class="questions-mark">Question Mark:</label>
+                  <div class="input-group col-3 mark-input">
+                    <input id="ques-mark" type="text" class="form-control" placeholder="Mark">
+                    <div class="input-group-append">
+                      <span class="input-group-text">marks</span>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <input type="submit" value="Add" class="btn btn-dark"></input>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- edit question modal -->
+        <div class="modal fade" id="myModal3">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Edit Question</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form method="post">
+                  <p>Q1)</p>
+                  <textarea name="name" class="form-control " rows="4" style="resize:none" placeholder="Question here"></textarea>
+                  <br>
+                  <label for="ques-mark" class="questions-mark">Question Mark:</label>
+                  <div class="input-group col-3 mark-input">
+                    <input id="ques-mark" type="text" class="form-control" placeholder="Mark">
+                    <div class="input-group-append">
+                      <span class="input-group-text">marks</span>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <input type="submit" value="edit" class="btn btn-dark"></input>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- solution modal  -->
+        <div class="modal fade" id="myModal2">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Add new Choice</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form method="post">
+
+
+                  <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol"></textarea>
+                  <br>
+                  <fieldset class="form-group">
+                    <div class="row">
+                      <legend class="col-form-label col-sm-2 pt-0">Answer Is:</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                          <label class="form-check-label" for="gridRadios1">
+                            Correct
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            False
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <br>
+                  <br>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <input type="submit" value="Add" class="btn btn-dark"></input>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- edit sol modal -->
+        <div class="modal fade" id="myModal4">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">edit Choice</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form method="post">
+
+
+                  <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol"></textarea>
+                  <br>
+                  <fieldset class="form-group">
+                    <div class="row">
+                      <legend class="col-form-label col-sm-2 pt-0">Answer Is:</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                          <label class="form-check-label" for="gridRadios1">
+                            Correct
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            False
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <br>
+                  <br>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <input type="submit" value="edit" class="btn btn-dark"></input>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <section>
           <p>Q1)</p>
-          <button type="button" class="btn btn-danger delete-que"><i class="far fa-times-circle"></i></button>
-          <textarea name="name" class="form-control " rows="4" style="resize:none" placeholder="Question here"></textarea>
-          <button type="button" class="btn btn-secondary" id="add-sol">Add solution</button>
 
-          <div class="input-group ques-c">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <input type="radio" name="q1">
-              </div>
+          <div class="dropdown delete-que">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-edit"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal3">Edit question</a>
+              <a class="dropdown-item" >Remove question</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal2">Add solution</a>
             </div>
-            <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol"></textarea>
-
-            <button class="btn  btn-danger" type="button">Remove</button>
           </div>
-          <div class="input-group ques-c">
+
+
+          <textarea name="name" class="form-control " rows="4" style="resize:none" placeholder="Question" readonly></textarea>
+
+
+          <div class="input-group ques-c col-10">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="radio" name="q1">
+                <input type="radio" name="q1" disabled>
               </div>
             </div>
-            <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol"></textarea>
-            <div class="input-group-append">
-              <button class="btn  btn-danger" type="button">Remove</button>
+            <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol" readonly></textarea>
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-edit"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal4">Edit Sol</a>
+              <a class="dropdown-item" >Remove Sol</a>
             </div>
+
+          </div>
+
+
+
+          <div class="input-group ques-c col-10">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="radio" name="q1" disabled>
+              </div>
+            </div>
+            <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol" readonly></textarea>
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-edit"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal4">Edit Sol</a>
+              <a class="dropdown-item" >Remove Sol</a>
+            </div>
+
           </div>
         </section>
+
 
         <section>
           <p>Q2)</p>
-          <button type="button" class="btn btn-danger delete-que"><i class="far fa-times-circle"></i></button>
-          <textarea name="name" class="form-control " rows="4" style="resize:none" placeholder="Question"></textarea>
-          <button type="button" class="btn btn-secondary" id="add-sol">Add solution</button>
 
-          <div class="input-group ques-c">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <input type="radio" name="q2" >
-              </div>
+          <div class="dropdown delete-que">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-edit"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal3">Edit question</a>
+              <a class="dropdown-item" >Remove question</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal2">Add solution</a>
             </div>
-            <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol"></textarea>
-
-            <button class="btn  btn-danger" type="button">Remove</button>
           </div>
 
-          <div class="input-group ques-c">
+
+          <textarea name="name" class="form-control " rows="4" style="resize:none" placeholder="Question" readonly></textarea>
+
+
+          <div class="input-group ques-c col-10">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <input type="radio" name="q2" >
+                <input type="radio" name="q1" disabled>
               </div>
             </div>
-            <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol"></textarea>
+            <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol" readonly></textarea>
 
-            <button class="btn  btn-danger" type="button">Remove</button>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-edit"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal4">Edit Sol</a>
+              <a class="dropdown-item" >Remove Sol</a>
+            </div>
+
           </div>
 
+
+
+          <div class="input-group ques-c col-10">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="radio" name="q1" disabled>
+              </div>
+            </div>
+            <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol" readonly></textarea>
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-edit"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal4">Edit Sol</a>
+              <a class="dropdown-item" >Remove Sol</a>
+            </div>
+
+          </div>
         </section>
+
+
+        <section>
+          <p>Q3)</p>
+
+          <div class="dropdown delete-que">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-edit"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal3">Edit question</a>
+              <a class="dropdown-item" >Remove question</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal2">Add solution</a>
+            </div>
+          </div>
+
+
+          <textarea name="name" class="form-control " rows="4" style="resize:none" placeholder="Question" readonly></textarea>
+
+
+          <div class="input-group ques-c col-10">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="radio" name="q1" disabled>
+              </div>
+            </div>
+            <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol" readonly></textarea>
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-edit"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal4">Edit Sol</a>
+              <a class="dropdown-item" >Remove Sol</a>
+            </div>
+
+          </div>
+
+
+
+          <div class="input-group ques-c col-10">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="radio" name="q1" disabled>
+              </div>
+            </div>
+            <textarea name="name" class="form-control " rows="1" style="resize:none" placeholder="Sol" readonly></textarea>
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-edit"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" data-toggle="modal" data-target="#myModal4">Edit Sol</a>
+              <a class="dropdown-item" >Remove Sol</a>
+            </div>
+
+          </div>
+        </section>
+
         <input type="submit" class="btn btn-success" id="save-b" name="" value="Save">
       </div>
     </form>
