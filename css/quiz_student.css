@@ -1,0 +1,23 @@
+.about-quiz{
+  text-align: center;
+}
+
+.quiz-body{
+  padding: 3%;
+}
+section{
+  margin-bottom: 2%;
+  border: 1px solid black;
+  padding: 2%;
+  padding-bottom: 0;
+}
+.sol-div{
+  margin-bottom: 2%;
+}
+.mark-c{
+  margin-left: 92%;
+}
+#sub{
+  margin-left: 45%;
+  margin-top: 3%;
+}
